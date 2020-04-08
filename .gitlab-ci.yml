@@ -1,0 +1,13 @@
+stages:
+  - build
+ 
+ variables:
+  GIT_STRATEGY: fetch
+ 
+ job_build:
+  stage: build
+  script:
+    - ls -la
+    - echo "building"
+  only
+    - master
